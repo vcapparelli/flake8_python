@@ -7,12 +7,11 @@ class EstatisticaDetalhada:
         self.agencia = agencia
 
     def roda_estatistica(self, clientes_atendidos: List[str]) -> dict:
-        estatistica: Dict[str, Union[List[str], str, int]] = {}
-        estatistica['dia'] = self.dia
-        estatistica['agencia'] = self.agencia
-        estatistica['clientes atendidos'] = clientes_atendidos
-        estatistica['quantidade clientes atendidos'] = (
-            len(clientes_atendidos)
-        )
+        estatistica: Dict[str, Union[List[str], str, int]] = {
+            'dia': self.dia,
+            'agencia': self.agencia,
+            'clientes atendidos': clientes_atendidos,
+            'quantidade clientes atendidos': len(clientes_atendidos)
+        }
 
         return estatistica

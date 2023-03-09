@@ -1,7 +1,7 @@
 # from fila_normal import FilaNormal
 # from fila_prioritaria import FilaPrioritaria
 from fabrica_fila import FabricaFila
-from estatistica_detalhada import EstatisticaDetalhada
+# from estatistica_detalhada import EstatisticaDetalhada
 from estatistica_resumida import EstatisticaResumida
 
 
